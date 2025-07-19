@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login / Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Doctor Access</h1>
+        <nav>
+            <a href="index.html">Home (Patient)</a>
+            <a href="doctor_login.html">Doctor Login</a>
+            <a href="admin_login.html">Admin Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Doctor Login</h2>
+        <form id="doctorLoginForm">
+            <label for="doctorEmail">Email:</label>
+            <input type="email" id="doctorEmail" name="email" required>
+
+            <label for="doctorPassword">Password:</label>
+            <input type="password" id="doctorPassword" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <hr>
+
+        <h2>Doctor Registration</h2>
+        <form id="doctorRegisterForm">
+            <label for="regDoctorName">Full Name:</label>
+            <input type="text" id="regDoctorName" name="name" required>
+
+            <label for="regDoctorEmail">Email:</label>
+            <input type="email" id="regDoctorEmail" name="email" required>
+
+            <label for="regDoctorPassword">Password:</label>
+            <input type="password" id="regDoctorPassword" name="password" required>
+
+            <label for="regDoctorDepartment">Department:</label>
+            <input type="text" id="regDoctorDepartment" name="department" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <div id="doctorMessage" class="message"></div>
+    </main>
+
+    <script src="doctor.js"></script>
+</body>
+</html>

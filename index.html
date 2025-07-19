@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Appointment</h1>
+        <nav>
+            <a href="index.html">Home (Patient)</a>
+            <a href="doctor_login.html">Doctor Login</a>
+            <a href="admin_login.html">Admin Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <form id="appointmentForm">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="doctorSelect">Select Doctor:</label>
+            <select id="doctorSelect" name="doctor" required>
+                <option value="">-- Select a Doctor --</option>
+                </select>
+
+            <label for="departmentSelect">Select Department:</label>
+            <select id="departmentSelect" name="department" required>
+                <option value="">-- Select a Department --</option>
+                </select>
+
+            <label for="appointmentDate">Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Time:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <label for="reason">Reason for Visit:</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="message" class="message"></div>
+    </main>
+
+    <script src="patient.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Doctor Dashboard</h1>
+        <nav>
+            <a href="index.html">Home (Patient)</a>
+            <a href="doctor_login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Welcome, Dr. [Doctor Name]!</h2> <p>Here's a summary of your activities.</p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-box">
+                <h3>Total Appointments</h3>
+                <p id="totalAppointments">0</p>
+            </div>
+            <div class="dashboard-box">
+                <h3>Today's Appointments</h3>
+                <p id="todayAppointments">0</p>
+            </div>
+            <div class="dashboard-box">
+                <h3>Estimated Revenue</h3>
+                <p id="estimatedRevenue">$0.00</p>
+            </div>
+        </div>
+
+        <div class="list-container">
+            <h2>Upcoming Appointments</h2>
+            <table id="appointmentsTable">
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="doctor_dashboard.js"></script>
+</body>
+</html>
